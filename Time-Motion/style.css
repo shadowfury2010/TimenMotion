@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #d2fafb;
+    border: 1rem;
+    border-color: #000;
+    margin: 2%;
+
+}
