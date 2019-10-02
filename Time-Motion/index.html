@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
@@ -17,32 +18,61 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-    <div class="container main"> 
+    <div class="container-fluid main"> 
         <div class="Heading">
             <h1>Time and Motion</h1>
         </div>
-        <div class="Clock">
+        <div class="Clock top-container container">
             <h2>Clock</h2>
-            <div class="In-office">
-                <input type="text" name="Time-Alloted" id="Time-Alloted">
-                <input type="text" name="Time-Consumed" id="Time-Consumed">
-                <input type="text" name="Time-Remaining" id="Time-Remaining">
+          <h3 class="Time-in-office"> Time In Office </h3> 
+            <div class="In-office row">
+              <div class="col-sm"> 
+                <h3>Start Timer</h3>
+                <input type="time" name="Time-Alloted" id="Time-Alloted" placeholder="Time-Alloted"> 
+              </div>
+              <div class="col-sm"> 
+                <h3>End Timer</h3>
+                <input type="time" name="Time-Consumed" id="Time-Consumed" placeholder="Time-Consumed"> 
+              </div>
+              <div class="col-sm">
+                <h3>Duration</h3>
+                <input type="time" name="Time-Remaining" id="Time-Remaining" placeholder="Time-Remaining"> 
+              </div>
             </div>
-            <div class="Working">
-                    <input type="text" name="Time-Alloted" id="Time-Alloted">
-                    <input type="text" name="Time-Consumed" id="Time-Consumed">
-                    <input type="text" name="Time-Remaining" id="Time-Remaining">
+          <hr>
+          <h3> Time In Production </h3>
+            <div class="Working row"> 
+                <div class="col-sm"> 
+                    <h3>Start Timer</h3>
+                    <input type="text" name="Time-Alloted" id="Time-Alloted" placeholder="Time-Alloted"> 
+                </div>
+                <div class="col-sm"> 
+                    <h3>End Timer</h3>
+                    <input type="text" name="Time-Consumed" id="Time-Consumed" placeholder="Time-Consumed"> 
+                </div>
+                <div class="col-sm">
+                    <h3>Duration</h3>
+                    <input type="text" name="Time-Remaining" id="Time-Remaining" placeholder="Time-Remaining"> 
+                </div>
             </div>
-        </div>
-
-        <div class="activities">
+      </div>
+        <hr>
+        <div class="activities middle-container">
             <h2>Activities</h2>
-            <div class="act-name">
-                <input type="radio" name="Production" id="Production">
-                <input type="radio" name="Break" id="Break">
-                <input type="radio" name="Auxiliary" id="Auxiliary">
+          
+            <div class="custom-control custom-radio custom-control-inline act-name">
+              <input type="radio" id="Production" name="Production" class="custom-control-input Production">
+                <label class="custom-control-label" for="Production">Production</label>
             </div>
-            <div class="act-list">
+            <div class="custom-control custom-radio custom-control-inline act-name">
+              <input type="radio" id="Break" name="Break" class="custom-control-input Break">
+                <label class="custom-control-label" for="Break">Break</label>
+              </div>
+            <div class="custom-control custom-radio custom-control-inline act-name">
+              <input type="radio" id="Auxiliary" name="Auxiliary" class="custom-control-input Auxiliary">
+                <label class="custom-control-label" for="Auxiliary">Auxiliary</label>
+              </div>
+            <div class="act-list"> <br>
                 <form action="/index.js"> Activity List</form>
                     <select name="activity" id="activity">
                             <option value="1">Task 1</option>
@@ -55,20 +85,32 @@
                     <input type="text" name="Names">
             </div>
         </div>
-
-        <div class="Timer-main">
-            <h2>Timers</h2>
-            <div class="timers">
-                <input type="" name="start" id="start">
-                <input type="text" name="end" id="end">
-            </div>
-            <div class="Duration">
-                <input type="text" name="Duration" id="Duration">
+        <hr>
+        <div class="Timer-main bottom-container">
+            <h2 class="Timer-heading">Timers</h2>
+            <div class="timers row">
+              <div class="col-sm"> 
+                <h3>Start Timer</h3>
+                <input type="" name="start" id="start" placeholder="Start">
+              </div> 
+              <div class="col-sm">
+                <h3>End Timer</h3>
+                <input type="" name="end" id="end" placeholder="End"> 
+              </div>
+              <div class="col-sm">
+                <h3>Duration</h3>
+                <input type="" name="duration" id="duration" placeholder="Duration"> 
+              </div>
             </div>
             <div class="Reset">
                 <button type="reset">Reset</button>
             </div>
-        </div>
+          <div class="footer">
+            <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+            <a class="footer-link" href="https://twitter.com/">Twitter</a>
+            <a class="footer-link" href="https://www.facebook.com/rakesh.sahu.1401933/">Facebook</a>
+            <p class= "copyright">© 2019 Rakesh Sahu.</p>
+          </div>
     </div>
         <script src="" async defer></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
