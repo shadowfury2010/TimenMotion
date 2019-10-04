@@ -55,21 +55,26 @@ h3 {
 
 .footer {
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem;
   
 }
 
 .top-container {
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem;
 }
 .middle-container {
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem;
+}
+
+.second-middle-container {
+  text-align: center;
+  margin: 2rem;
 }
 .bottom-container {
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem;
 }
 
 .Clock {
@@ -78,7 +83,6 @@ h3 {
 
 .In-office {
   margin: 2rem;
-  padding: 2rem;
 }
 
 .Working {
@@ -88,10 +92,18 @@ h3 {
 
 .timers {
   margin: 2rem;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .Time-in-office {
+  margin-top: 2rem;
+}
+
+.card-deck {
+  margin-top: 2rem;
+}
+
+.activity-radios {
   margin-top: 2rem;
 }
 
